@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+        The main container for the entire page, using CSS Grid for the overall layout.
+        The layout will be defined in the style.css file with named grid areas.
+    -->
+    <div class="grid-container">
+
+        <!-- Header section of the webpage -->
+        <header class="grid-item header">
+            <h1>Responsive Layout Demo</h1>
+        </header>
+
+        <!--
+            Navigation bar, using Flexbox to align and distribute the links.
+            This demonstrates a common use case for Flexbox within a larger Grid layout.
+        -->
+        <nav class="grid-item nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="grid-item main-content">
+            <h2>Main Content Area</h2>
+            <p>
+                This area showcases how a section can hold primary content.
+                It's designed to adapt gracefully to different screen sizes,
+                changing its flow and dimensions based on the viewport.
+                We're using Flexbox here to organize the content within this main area.
+            </p>
+            <div class="content-cards">
+                <div class="card">
+                    <h3>Card One</h3>
+                    <p>A simple content card.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Two</h3>
+                    <p>Another content card.</p>
+                </div>
+                <div class="card">
+                    <h3>Card Three</h3>
+                    <p>And a third card.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar, for secondary or related information -->
+        <aside class="grid-item sidebar">
+            <h3>Sidebar</h3>
+            <p>
+                This sidebar provides secondary information. On larger screens, it's positioned next to the main content.
+                On smaller devices, it will fluidly move below the main content to maintain a single-column layout.
+            </p>
+        </aside>
+
+        <!-- Footer, positioned at the bottom of the page -->
+        <footer class="grid-item footer">
+            <p>&copy; 2024 Responsive Webpage</p>
+        </footer>
+    </div>
+</body>
+</html>
